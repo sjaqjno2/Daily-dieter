@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffaf6e</color>
+    <color name="colorPrimaryDark">#2a2a2a</color>
+    <color name="colorAccent">#ffa83d</color>
+    <color name="button">#e4e5ea</color>
+    <color name="brown">#632e13</color>
+    <color name="title">#00366c</color>
+    <color name="black">#000000</color>
+
+
+    <color name="sendmsg">#3effa600</color>
+    <color name="getmsg">#54e4e5ea</color>
+
+
+    <color name="bright_blue">#E6F7FE</color>
+    <color name="bright_yellow">#F7DDC1</color>
+    <color name="yellow">#72ffa600</color>
+    <color name="white">#ffffff</color>
+    <color name="fullTransparent">#00000000</color>
+    <color name="divider">#8c9e9e9e</color>
+    <color name="dullWhite">#9e9e9e</color>
+
+
+    <!-- Grid layout -->
+
+    <color name="darkTextColor">#1d1d26</color>
+    <color name="lightTextColor">#a8a8aa</color>
+    <color name="gridlayoutDivider">#e4e5ea</color>
+
+    <!-- list layout -->
+
+    <color name="listlayoutDivider">#f8f8f9</color>
+    <color name="listviewTextColor">#111111</color>
+    <color name="listviewSelectedTextColor">#cfcfd1</color>
+
+    <!-- Form layout -->
+
+    <color name="formDivider">#dee0e2</color>
+    <color name="FormTextColor">#1d1d26</color>
+
+
+    <!-- Navigation layout -->
+
+    <color name="navigationDivider">#dee0e2</color>
+    <color name="navigationTextColor">#1d1d26</color>
+
+
+    <!-- Viewpager layout -->
+
+    <color name="viewPagerTextColor">#1d1d26</color>
+    <color name="viewPagerSelectedBotton">#3281da</color>
+    <color name="viewPagerUnSelectBotton">#ceced0</color>
+
+    <color name="calanderBg">#eeeeee</color>
+
+    <color name="username0">#9d0e00</color>
+    <color name="username1">#a4002b</color>
+    <color name="username2">#cc8a00</color>
+    <color name="username3">#c16d00</color>
+    <color name="username4">#2e7300</color>
+    <color name="username5">#174600</color>
+    <color name="username6">#388f00</color>
+    <color name="username7">#008a6b</color>
+    <color name="username8">#00449b</color>
+    <color name="username9">#13007e</color>
+    <color name="username10">#4e0077</color>
+    <color name="username11">#000000</color>
+
+
+</resources>

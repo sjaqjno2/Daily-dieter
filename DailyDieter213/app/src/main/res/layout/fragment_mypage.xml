@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:src="@drawable/salad"
+            android:scaleType="fitXY"
+            />
+
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/formDivider">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="My Info"
+                    android:textColor="@color/FormTextColor"
+                    android:textSize="14dp" />
+
+
+                <ImageButton
+                    android:id="@+id/myInfoImageButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@color/fullTransparent"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/formDivider"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="@color/FormTextColor"
+                    android:text="Wish List"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageButton
+                    android:id="@+id/wishlist"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/right_arrow"
+                    android:background="@color/fullTransparent"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/formDivider"></LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="@color/FormTextColor"
+                    android:text="Logout"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+                <ImageButton
+                    android:id="@+id/logout"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/right_arrow"
+                    android:background="@color/fullTransparent"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/formDivider"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatMainFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/send_button"
+            android:layout_below="@+id/message"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round"
+            android:hint=" Message"
+            android:imeActionId="@+id/send"
+            android:imeActionLabel="@string/action_send"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            tools:ignore="InvalidImeActionId" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/message_input"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorAccent"
+            android:contentDescription="@string/action_send"
+            android:src="@android:drawable/ic_menu_send" />
+
+    </RelativeLayout>
+</RelativeLayout>

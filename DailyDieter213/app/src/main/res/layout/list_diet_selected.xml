@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/dietSelectedNameView"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="text|textNoSuggestions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/dietSelectedCalorieView"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="text|textNoSuggestions"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dietSelectedNameView"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

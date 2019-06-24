@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doo.dailydieter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:name="com.example.doo.dailydieter.ChatApplication"
+        android:roundIcon="@drawable/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DietprocessCameraActivity"/>
+        <activity android:name=".DietprocessActivity2"/>
+        <activity android:name=".DietprocessActivity3"/>
+        <activity android:name=".DietprocessActivity4"/>
+        <activity android:name=".DietprocessActivity5"/>
+        <activity android:name=".DietprocessActivity6"/>
+        <activity android:name=".DietprocessActivity7"/>
+        <activity android:name=".DietprocessGalleryActivity"/>
+        <activity android:name=".CameraActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".LoginRegisterActivity"/>
+        <activity android:name=".WritingProcessActivity"/>
+        <activity android:name=".WritingPostInsertingActivity"/>
+        <activity android:name=".SelectedPostActivity"/>
+        <activity android:name=".SelectedDietActivity"/>
+        <activity android:name=".SelectedDietActivity2"/>
+        <activity android:name=".SelectedGroupActivity"/>
+        <activity android:name=".SelectedTipActivity"/>
+        <activity android:name=".SelectedCelebrityActivity"/>
+        <activity android:name=".UpdatePostActivity"/>
+        <activity android:name=".WishListActivity"/>
+        <activity android:name=".SelectedWishListActivity"/>
+        <activity android:name=".ChatMainActivity"/>
+        <activity android:name=".ChatProcessActivity"/>
+        <activity android:name=".SelectDateDietActivity"/>
+        <activity android:name=".MyInfoActivity"/>
+        <activity android:name=".UpdateDietActivity"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

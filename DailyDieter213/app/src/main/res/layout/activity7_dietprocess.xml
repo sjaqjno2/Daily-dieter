@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnConnect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="22dp"
+        android:src="@drawable/bluetooth" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mealradio"
+        android:divider="#ffffff"
+        android:dividerHeight="10dp"
+        android:includeFontPadding="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    <LinearLayout
+        android:id="@+id/threebutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="measure"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/reweighing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/calculateButton"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="remeasure"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/registerFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/reweighing"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weight_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/listview"
+        android:text="Weight1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/weight_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="142dp"
+        android:text="Weight2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/weight_text1"
+        app:layout_constraintStart_toEndOf="@+id/weight_text1" />
+
+    <TextView
+        android:id="@+id/weight_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="211dp"
+        android:text="Weight3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/weight_text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/weight_text2" />
+
+
+    <TextView
+        android:id="@+id/weight_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Weight4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/weight_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="207dp"
+        android:text="Weight5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/weight_text4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/mealradio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:text="Breakfast" />
+
+        <RadioButton
+            android:id="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:text="Lunch" />
+
+        <RadioButton
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:text="Dinner" />
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/lin2"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/logo1" />
+
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:id="@+id/dietIDView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserID"
+            android:background="@color/fullTransparent"
+            android:padding="12dp"
+            android:textSize="@dimen/textSize"
+            android:drawableLeft="@drawable/ic_avatar"
+            android:drawablePadding="8dp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"></LinearLayout>
+
+
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paassword"
+            android:background="@color/fullTransparent"
+            android:padding="12dp"
+            android:textSize="@dimen/textSize"
+            android:drawableLeft="@drawable/ic_avatar"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="12dp"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"></LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:padding="12dp"
+            android:textColor="@color/dullWhite"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textSize="@dimen/textSize"
+            android:background="@color/fullTransparent"
+            android:layout_marginBottom="32dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"            android:padding="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account ?"
+                android:textColor="@color/dullWhite"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Sign Up"
+                android:background="@color/fullTransparent"
+                android:textColor="@color/dullWhite"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/namefood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/weightfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightTextColor"
+        android:layout_toLeftOf="@+id/weightfoodlabel" />
+
+    <TextView
+        android:id="@+id/weightfoodlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/calorie"
+        android:text="g    " />
+
+    <TextView
+        android:id="@+id/calorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightTextColor"
+        android:layout_toLeftOf="@+id/calorielabel" />
+
+    <TextView
+        android:id="@+id/calorielabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="kcal" />
+
+    <TextView
+        android:id="@+id/carblabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfood"
+        android:layout_toLeftOf="@+id/carbohydrate"
+        android:text="탄 " />
+
+    <TextView
+        android:id="@+id/carbohydrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfoodlabel"
+        android:textColor="@color/lightTextColor"
+        android:layout_toLeftOf="@+id/proteinlabel" />
+
+    <TextView
+        android:id="@+id/proteinlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfood"
+        android:layout_toLeftOf="@+id/protein"
+        android:text="g, 단 " />
+
+    <TextView
+        android:id="@+id/protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfood"
+        android:textColor="@color/lightTextColor"
+        android:layout_toLeftOf="@+id/fatlabel" />
+
+    <TextView
+        android:id="@+id/fatlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfood"
+        android:layout_toLeftOf="@+id/fat"
+        android:text="g, 지 " />
+
+    <TextView
+        android:id="@+id/fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfood"
+        android:textColor="@color/lightTextColor"
+        android:layout_toLeftOf="@+id/saltlabel" />
+
+    <TextView
+        android:id="@+id/saltlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfood"
+        android:layout_toLeftOf="@+id/salt"
+        android:text="g, 나 " />
+
+    <TextView
+        android:id="@+id/salt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightfood"
+        android:textColor="@color/lightTextColor"
+        android:layout_toLeftOf="@id/gram"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gram"
+        android:layout_below="@+id/weightfood"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="g"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraFragment">
+
+
+    <include layout="@layout/content_camera" />
+
+    <LinearLayout
+        android:id="@+id/threebutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Camera_Execution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"            android:text="Camera" />
+
+        <Button
+            android:id="@+id/Gallery_Execution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/Camera_Execution"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textStyle="bold"            android:text="gallery" />
+
+    </LinearLayout>
+
+</RelativeLayout>

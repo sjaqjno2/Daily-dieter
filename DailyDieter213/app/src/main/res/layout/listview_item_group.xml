@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <TextView
+
+        android:id="@+id/group_name_textView"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="제목"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/group_count"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/group_name_textView"
+        android:layout_below="@+id/group_name_textView"
+        android:layout_centerVertical="true"
+        android:text="count" />
+
+    <TextView
+        android:id="@+id/group_count_participant"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/group_count"
+        android:layout_below="@+id/group_name_textView"
+        android:layout_centerVertical="true"
+        android:text="participants" />
+
+    <TextView
+        android:id="@+id/group_goal"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/group_name_textView"
+        android:layout_alignTop="@+id/count"
+        android:layout_below="@+id/group_count"
+        android:text="goal" />
+
+
+</RelativeLayout>
